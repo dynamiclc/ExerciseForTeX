@@ -1,0 +1,266 @@
+% !TEX TS-program = XeLaTeX
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Two Column One Page Curriculum Vitae
+% LaTeX Template
+% Version 1.1 (24/1/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro (The CV Inn)
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article} % Font size - 10pt, 11pt or 12pt
+
+\usepackage[hmargin=1.25cm, vmargin=1.5cm]{geometry} % Document margins
+
+\usepackage{marvosym} % Required for symbols in the colored box
+\usepackage{ifsym} % Required for symbols in the colored box
+
+\usepackage[usenames,dvipsnames]{xcolor} % Allows the definition of hex colors
+
+% Fonts and tweaks for XeLaTeX
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Mapping=tex-text]{Hoefler Text} % Main document font
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans} % Font for your name at the top
+%\setmonofont[Scale=MatchLowercase]{Andale Mono}
+
+% Colors for links, text and headings
+\usepackage{hyperref}
+\definecolor{linkcolor}{HTML}{506266} % Blue-gray color for links
+\definecolor{shade}{HTML}{F5DD9D} % Peach color for the contact information box
+\definecolor{textcolor}{HTML}{2b2b2b} % Main document font color, off-black
+\definecolor{headings}{HTML}{701112} % Dark red color for headings
+% Other color palettes: shade=B9D7D9 and linkcolor=A40000; shade=D4D7FE and linkcolor=FF0080
+
+\hypersetup{colorlinks,breaklinks, urlcolor=linkcolor, linkcolor=linkcolor} % Set up links and colors
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example footer:
+%\rfoot{\color{headings} {\sffamily Last update: \today}. Typeset with Xe\LaTeX}
+
+\renewcommand{\headrulewidth}{0pt} % Get rid of the default rule in the header
+
+\usepackage{titlesec} % Allows creating custom \section's
+
+% Format of the section titles
+\titleformat{\section}{\color{headings}
+\scshape\Large\raggedright}{}{0em}{}[\color{black}\titlerule]
+
+\titlespacing{\section}{0pt}{0pt}{5pt} % Spacing around titles
+
+\begin{document}
+
+\color{textcolor} % Sets the default text color for the whole document to the color defined as 'text1'
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\sffamily\Huge Cong Liu}\\ % Your name
+{\color{headings}\fontspec[Variant = 2]{Zapfino} Curriculum {Vit\fontspec[Variant = 3]{Zapfino}\ae}\\[15pt]\par} % Curriculum vitae text in the Zapfino font
+	
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth} % Start the left-hand side of the page
+\vspace{0pt} % Trick for alignment
+	
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience} 
+
+%------------------------------------------------
+% WORK EXPERIENCE 1
+%------------------------------------------------
+
+{\raggedleft\textsc{Current, from January 2013}\par}
+
+{\raggedright\large Programmer at Com2us, Seoul, South Korea\\
+\textit{Platform Development, Client-Side}\\[5pt]}
+
+\normalsize{Helped developed and managed a social app, Com2us Hub, for iOS and Android devices, using Com2us Hub APIs to facilitate the large community of players for all Com2us games.}\\
+
+%------------------------------------------------
+% WORK EXPERIENCE 2
+%------------------------------------------------
+
+{\raggedleft\textsc{March 2012 -- June 2012}\par}
+
+{\raggedright\large Teaching Assistant at Department of Computer Science and Engineering, \textsc{postech}, Pohang, South Korea\\
+\textit{Programming Course}\\[5pt]}
+
+\normalsize{Helped the professor, in Programming 101 course, design the exam problems, proctor exams and grade answer sheets.}\\
+
+%------------------------------------------------
+% WORK EXPERIENCE 3
+%------------------------------------------------
+
+{\raggedleft\textsc{August 2011 -- July 2012}\par}
+
+{\raggedright\large Researcher at Mobile Networking Laboratory, \textsc{postech}, Pohang, South Korea\\
+\textit{Mobile Networking}\\[5pt]}
+
+\normalsize{Researched on the self-similarity property in real-time using a classical 1994 Ethernet data and a 2009 wireless traffic data from a Portland State University experiment. Findings published as my Master's thesis.}\\
+
+%------------------------------------------------
+% WORK EXPERIENCE 4
+%------------------------------------------------
+
+{\raggedleft\textsc{September 2010 -- June 2011}\par}
+
+{\raggedright\large Researcher at Intelligent Software Laboratory, \textsc{postech}, Pohang, South Korea\\
+\textit{Natural Language Processing}\\[5pt]}
+
+\normalsize{Researched on rule-based English sentence stress prediction using rules from linguists of Seoul National University, with API modules from SK Telecom. Training/test data based on Boston University's corpus. Result published in The Korean Society of Speech Sciences Spring Conference, June 2011.}\\
+
+%------------------------------------------------
+% WORK EXPERIENCE 5
+%------------------------------------------------
+
+{\raggedleft\textsc{February 2009 -- June 2009}\par}
+
+{\raggedright\large Researcher at School of Automation Engineering, \textsc{uestc}, Chengdu, China\\
+\textit{Pattern Recognition}\\[5pt]}
+
+\normalsize{Developed pattern-based flavoring packet recognition on instant-noodle production line with graduate colleagues. Result published in my Bachelor's thesis.}\\
+
+%----------------------------------------------------------------------------------------	
+
+\end{minipage} % End the left-hand side of the page
+\hfill
+\begin{minipage}[t]{0.44\textwidth} % Start the right-hand side of the page
+\vspace{0pt} % Trick for alignment
+
+%----------------------------------------------------------------------------------------
+%	COLORED BOX
+%----------------------------------------------------------------------------------------
+
+\colorbox{shade}{\textcolor{textcolor}{
+\begin{tabular}{c|p{7cm}}
+\raisebox{-4pt}{\textifsymbol{18}} & 147-31 Gasan-dong, Geumcheon-gu, Seoul, Republic of Korea, 153-801 \\ % Address
+\raisebox{-3pt}{\Mobilefone} & +82 (0)10 2779 4603 \\ % Cellphone number
+\raisebox{-1pt}{\Letter} & \href{mailto:john@smith.com}{congliu0704@gmail.com}\\ % Email address
+%\Keyboard & \href{http://www.johnsmith.com}{http://www.johnsmith.com} \\ % Website
+\end{tabular}
+}
+}\\[10pt]
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education} 
+
+\begin{tabular}{rl} % Start a table with two columns, one for dates and one for qualifications
+
+%------------------------------------------------
+% EDUCATION 1
+%------------------------------------------------
+
+September 2010 & \textbf{Master of Engineering} \\ 
+-- August 2012 & \small Magna cum laude \\
+& \textsc{Computer Science} \\ 
+& \textit{Pohang University of Science and}\\
+& \textit{Technology} (\textit{\textsc{postech}})\\
+	 
+%------------------------------------------------
+% EDUCATION 2
+%------------------------------------------------
+
+September 2005 & \textbf{Bachelor of Engineering} \\ 
+-- July 2009 & \small Magna cum laude \\
+& \textsc{Electronics} \\ 
+& \textit{The University of Electronic}\\
+& \textit{Science and Technology of China}\\
+& (\textit{\textsc{uestc}})
+
+%----------------------------------------------------------------------------------------
+
+\end{tabular}\\[10pt]
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+
+\section{Awards} 
+
+\begin{tabular}{rl}
+2010	 & \textbf{International Graduates Scholarship}\\
+& \textit{Pohang University of Science and Technology}\\
+
+%------------------------------------------------
+
+2007	 & \textbf{Best Volunteer}\\
+& \textit{The Third International Conference on Public}\\
+& \textit{Administration (ICPA 2007)}\\ 
+
+%------------------------------------------------
+
+2006	 & \textbf{First Class Scholarship}\\
+& \textit{The University of Electronic Science and}\\
+& \textit{Technology of China}\\ 
+
+%------------------------------------------------
+
+2001	 & \textbf{Second Class Prize}\\
+-- 2004 & \textit{National Olympiad in Informatics in Provinces}
+\end{tabular}\\[10pt]
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Computer Skills} 
+
+\begin{tabular}{rl}
+\textsc{Intermediate}
+& Objective-C, \textsc{Java}, C, C++,\\
+& Machine Learning, Linux, Windows,\\
+& Natural Language Processing,\\
+& Pascal, Office, Hardware, \& Logic\\
+\textsc{Basic}
+& HTML5, CSS, JavaScript, PHP,\\
+& Adobe Photoshop, \& \LaTeX \\
+\end{tabular}\\
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Communication Skills} 
+
+\begin{tabular}{rl}
+\textsc{Advanced}
+& Chinese (Simplified \textsc{hsk-6 284},\\
+& Traditional), English (\textsc{toeic 960,}\\
+& \textsc{toeic speaking 170})\\
+\textsc{Intermediate}
+& Korean, Japanese\\
+\textsc{Basic}
+& Latin, German, \& French\\
+\end{tabular}\\[10pt]
+
+%----------------------------------------------------------------------------------------
+	
+\end{minipage} % End right-hand side of the page
+
+\end{document}  
